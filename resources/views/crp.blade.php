@@ -255,13 +255,8 @@
 						<td style="width: 1%;"><strong>&nbsp;</strong></td>
 						<td style="width: 1%;"><strong>&nbsp;</strong></td>
 						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;" colspan="8"><strong class="tbdy td2020">Rosal, Wendel H. (39)</strong></td>
+						<td style="width: 1%;" colspan="8"><strong class="tbdy td2021">Rosal, Wendel H. (39)</strong></td>
+						<td style="width: 1%;" colspan="6"><strong class="tbdy td2020">Rosal, Wendel H. (39)</strong></td>
 						<td style="width: 1%;"><strong>&nbsp;</strong></td>
 						<td style="width: 1%;"><strong>&nbsp;</strong></td>
 						<td style="width: 1%;"><strong>&nbsp;</strong></td>
@@ -286,31 +281,31 @@
 						<td style="width: 1%;"><strong>&nbsp;</strong></td>
 						<td style="width: 1%;"><strong>&nbsp;</strong></td>
 						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
+						<td style="width: 1%;"><strong>&nbsp;</strong></td>
 						<td style="width: 1%;" colspan="8"><strong class="tbdy td2021">Causing, Loren P. (41)</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
-						<td style="width: 1%;"><strong>&nbsp;</strong></td>
 					</tr>
 					<tr>
 						<td style="width: 1%;"><strong>&nbsp;</strong></td>

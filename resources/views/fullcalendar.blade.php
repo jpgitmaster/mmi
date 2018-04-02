@@ -10,8 +10,12 @@
 </div>
 <style>
 #calendar {
-  max-width: 900px;
+  max-width: 90%;
   margin: 40px auto;
+  font-size: 14px;
+}
+.fc-body .fc-resource-area .fc-cell-content{
+	padding: 5px;
 }
 </style>
 @endsection
