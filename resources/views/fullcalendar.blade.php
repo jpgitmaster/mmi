@@ -14,8 +14,11 @@
   margin: 40px auto;
   font-size: 14px;
 }
-.fc-body .fc-resource-area .fc-cell-content{
+#calendar .fc-body .fc-resource-area .fc-cell-content{
 	padding: 5px;
+}
+#calendar .fc-event, #calendar .fc-event:hover{
+	color: #FFF;
 }
 </style>
 @endsection
