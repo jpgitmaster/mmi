@@ -24,14 +24,19 @@ class Controller extends BaseController
   }
 
   public function import_css(){
+    define('c_ngmotion', 'plugins/angular-motion/dist/angular-motion.min.css');
   	define('c_bootstrap', 'plugins/bootstrap/dist/css/bootstrap.min.css');
     define('c_fawesome', 'plugins/font-awesome/css/font-awesome.min.css');
 
     define('c_global', 'css/app/global.css');
+    define('c_homepage', 'css/app/homepage.css');
+    define('c_login', 'css/app/login.css');
 
     define('c_crm', 'css/app/crm.css');
     define('c_fullcalendar', 'plugins/fullcalendar/fullcalendar.min.css');
     define('c_scheduler', 'plugins/fullcalendar-scheduler/scheduler.min.css');
+
+    define('c_admn_master', 'css/app/admin/admin.css');
   }
 
   public function import_js(){
@@ -51,5 +56,6 @@ class Controller extends BaseController
     define('n_nganimate', 'plugins/angular/angular-animate.min.js');
 
     // USER
+    define('n_global', 'js/app/global.js');
   }
 }

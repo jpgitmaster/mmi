@@ -68,7 +68,8 @@
 /* 0 */
 /***/ function(module, exports) {
 
-eval("//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMC5qcyIsInNvdXJjZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ==");
+"use strict";
+eval("'use strict';\r\nvar MMIapp = angular.module('MMIapp', ['ngSanitize', 'ngResource', 'ngAnimate']);\r\n\r\nMMIapp.controller('ctrlLogin', ['$scope', '$timeout', '$http',\r\n    function($scope, $timeout, $http) {\r\n}]);\r\n\r\nMMIapp.config(function($interpolateProvider){\r\n    $interpolateProvider.startSymbol('<%=').endSymbol('%>');\r\n});//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMC5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9yZXNvdXJjZXMvYXNzZXRzL2pzL2FwcC9nbG9iYWwuanM/YmNiMSJdLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIHN0cmljdCc7XHJcbnZhciBNTUlhcHAgPSBhbmd1bGFyLm1vZHVsZSgnTU1JYXBwJywgWyduZ1Nhbml0aXplJywgJ25nUmVzb3VyY2UnLCAnbmdBbmltYXRlJ10pO1xyXG5cclxuTU1JYXBwLmNvbnRyb2xsZXIoJ2N0cmxMb2dpbicsIFsnJHNjb3BlJywgJyR0aW1lb3V0JywgJyRodHRwJyxcclxuICAgIGZ1bmN0aW9uKCRzY29wZSwgJHRpbWVvdXQsICRodHRwKSB7XHJcbn1dKTtcclxuXHJcbk1NSWFwcC5jb25maWcoZnVuY3Rpb24oJGludGVycG9sYXRlUHJvdmlkZXIpe1xyXG4gICAgJGludGVycG9sYXRlUHJvdmlkZXIuc3RhcnRTeW1ib2woJzwlPScpLmVuZFN5bWJvbCgnJT4nKTtcclxufSk7XG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIHJlc291cmNlcy9hc3NldHMvanMvYXBwL2dsb2JhbC5qcyJdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJzb3VyY2VSb290IjoiIn0=");
 
 /***/ }
 /******/ ]);

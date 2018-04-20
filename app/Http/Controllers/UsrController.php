@@ -17,8 +17,8 @@ class UsrController extends Controller
     $this->msg = [];
   }
 
-  public function index(){
-  	return view('dashboard', [
+  public function dashboard(){
+    return view('dashboard', [
       'scripts'       => $this->import['scripts'],
       'stylesheet'    => $this->import['stylesheet'],
       // 'ngular'        => $this->import['ngular']

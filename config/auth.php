@@ -45,6 +45,10 @@ return [
             'driver' => 'token',
             'provider' => 'users',
         ],
+        'jp_admin' => [
+            'driver' => 'session',
+            'provider' => 'jp_admins',
+        ],
     ],
 
     /*
@@ -67,9 +71,13 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            'model' => App\Usr::class,
         ],
 
+        'jp_admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Admn::class,
+        ],
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
@@ -94,6 +102,11 @@ return [
     'passwords' => [
         'users' => [
             'provider' => 'users',
+            'table' => 'password_resets',
+            'expire' => 60,
+        ],
+        'jp_admins' => [
+            'provider' => 'jp_admins',
             'table' => 'password_resets',
             'expire' => 60,
         ],

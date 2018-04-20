@@ -1,0 +1,77 @@
+#header {
+  background-color: #2a166f;
+  padding: 5px 20px;
+}
+
+#header .logo {
+  width: 220px;
+}
+
+#header .logo img {
+  width: 100%;
+}
+
+#homeslider {
+  position: relative;
+}
+
+#homeslider #menu {
+  background-color: rgba(42, 22, 111, 0.5);
+  padding: 0 15px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+#homeslider #menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+#homeslider #menu ul li {
+  list-style: none;
+  float: left;
+}
+
+#homeslider #menu ul li:hover {
+  background-color: rgba(0, 119, 192, 0.4);
+}
+
+#homeslider #menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #FFF;
+}
+
+#homeslider .carousel-indicators li {
+  cursor: pointer;
+}
+
+#homeslider .sldr_msg {
+  background-color: rgba(42, 22, 111, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 140px;
+  z-index: 9;
+  max-width: 500px;
+  color: #FFF;
+}
+
+#homeslider .sldr_msg.lft {
+  left: 50px;
+}
+
+#homeslider .sldr_msg.rght {
+  right: 50px;
+}
+
+#homeslider .sldr_msg h1 {
+  font-size: 25px;
+  border-bottom: 1px solid #FFF;
+  padding-bottom: 4px;
+}
+
+/*# sourceMappingURL=homepage.css.map */
