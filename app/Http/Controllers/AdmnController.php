@@ -15,7 +15,7 @@ class AdmnController extends Controller
     	$this->import = [
             'stylesheet' => [c_fawesome, c_bootstrap, c_global, c_admn_master],
             'scripts' => [j_jquery, j_popper, j_bootstrap],
-            'ngular'    => [n_ng, n_global, n_ngresource, n_ngsanitize, n_nganimate, n_admin]
+            'ngular'    => [n_ng, n_ngresource, n_ngsanitize, n_nganimate, n_admin]
         ];
     }
 
