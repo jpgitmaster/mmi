@@ -7,7 +7,7 @@
   
   <link rel="shortcut icon" href="{{ URL::asset('img/logo.png') }}">
   <link rel="icon" type="image/x-icon" href="{{ URL::asset('img/logo.png') }}">
-  <title>Seafarers - @yield('title')</title>
+  <title>Multinational Maritime Inc. - @yield('title')</title>
 
   @if (isset($stylesheet))
     @foreach($stylesheet as $css)

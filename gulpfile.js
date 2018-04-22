@@ -10,4 +10,7 @@ elixir(function(mix) {
 
 elixir(function(mix) {
     mix.webpack('app/global.js', 'public/js/app');
+
+    mix.webpack('app/admin/admin.js', 'public/js/app/admin');
+    mix.webpack('app/admin/images.js', 'public/js/app/admin');
 });

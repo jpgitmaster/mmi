@@ -15,7 +15,7 @@ class AdmnController extends Controller
     	$this->import = [
             'stylesheet' => [c_fawesome, c_bootstrap, c_global, c_admn_master],
             'scripts' => [j_jquery, j_popper, j_bootstrap],
-            'ngular'    => []
+            'ngular'    => [n_ng, n_global, n_ngresource, n_ngsanitize, n_nganimate, n_admin]
         ];
     }
 
@@ -23,7 +23,7 @@ class AdmnController extends Controller
     	return view('admin.images', [
             'scripts'       => $this->import['scripts'],
             'stylesheet'    => $this->import['stylesheet'],
-            'ngular'        => $this->import['ngular']
+            'ngular'        => array_merge($this->import['ngular'], [n_images])
         ]);
     }
 

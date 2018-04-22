@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="admnApp">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
 @endif
 </head>
 <body>
-<div id="wrapper">
+<div id="wrapper" ng-controller="ctrlApp">
   <div class="admnbx logo">
     <a href="/" class="cmpnylogo">
       <img src="{{ URL::asset('img/logo.png') }}" alt="">
@@ -64,7 +64,7 @@
       <li></li>
     </ul>
   </div>
-  <div class="admnbx content">
+  <div class="admnbx content" ng-app="usrContent">
     @yield('admin_content')
   </div>
 </div>

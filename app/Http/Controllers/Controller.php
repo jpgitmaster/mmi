@@ -57,5 +57,9 @@ class Controller extends BaseController
 
     // USER
     define('n_global', 'js/app/global.js');
+
+    // ADMIN
+    define('n_admin', 'js/app/admin/admin.js');
+    define('n_images', 'js/app/admin/images.js');
   }
 }
