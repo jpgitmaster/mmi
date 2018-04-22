@@ -1,9 +1,7 @@
 'use strict'; 
 var usrContent = angular.module('usrContent', []);
 
-usrContent.controller('ctrlEditProfile',
-    ['$scope',
-    function($scope) {
+usrContent.controller('ctrlImages', ['$scope', function($scope) {
 
 }]);
 usrContent.directive('fileInput', ['$parse', '$http', '$timeout',
@@ -14,6 +12,8 @@ usrContent.directive('fileInput', ['$parse', '$http', '$timeout',
           elm.bind('change', function(){
               
             var files = elm[0].files;
+            console.log(files);
+            angular.element('#imgModal').modal('show');
             $parse(attrs.fileInput).assign(scope, files);
             scope.$apply();
             

@@ -2,14 +2,10 @@
 @section('title', 'Images')
 
 @section('admin_content')
-<div class="cntnbx">
+<div class="cntnbx" ng-controller="ctrlImages">
 	<h4 class="ttl">Images</h4>
 	<div class="card">
   	<div class="card-header">
-  		{{-- <button class="btn btn-primary" type="button">
-		  	Add Sliding Banner &nbsp;&nbsp; 
-		  	<i class="fa fa-plus"></i>
-			</button> --}}
 			<div class="fileUpload btn btn-primary">
       	Add Sliding Banner &nbsp;&nbsp; <i class="fa fa-plus"></i> <input type="file" class="upload" file-input="files">
       </div>
@@ -176,5 +172,23 @@
   </div>
 	<div class="clearfix"></div>
 	<br><br>
+
+	<div class="modal fade" id="imgModal">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	    </div>
+	  </div>
+	</div>
 </div>
+
+
 @endsection

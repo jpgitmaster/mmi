@@ -1,6 +1,6 @@
 'use strict';
 
-var admnApp = angular.module('admnApp', []);
+var admnApp = angular.module('admnApp', ['ngSanitize', 'ngResource', 'ngAnimate', 'usrContent']);
 
 
 admnApp.controller('ctrlApp', ['$scope',
