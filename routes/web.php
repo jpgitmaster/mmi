@@ -27,6 +27,9 @@ Route::group(['middleware' => ['auth:jp_admin']], function(){
 		Route::get('dashboard', [
 	    'as' => 'admn_dashboard', 'uses' => 'AdmnController@dashboard'
 		]);
+		Route::get('images', [
+	    'as' => 'admn_images', 'uses' => 'AdmnController@images'
+		]);
 		Route::get('logout', [
 	    'as' => 'admn_logout', 'uses' => 'AdmnController@logout'
 		]);

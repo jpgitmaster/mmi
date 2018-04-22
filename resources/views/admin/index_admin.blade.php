@@ -50,6 +50,12 @@
         </a>
       </li>
       <li>
+        <a href="{{route('admn_images')}}">
+          <span class="lbl">Images</span>
+          <span class="icn"><i class="fa fa-image"></i></span>
+        </a>
+      </li>
+      <!-- <li>
         <a href="">
           <span class="lbl">Users</span>
           <span class="icn"><i class="fa fa-users"></i></span>
@@ -59,7 +65,7 @@
         <a href="">
           <span class="lbl">Jobs</span>
           <span class="icn"><i class="fa fa-briefcase"></i></span>
-        </a>
+        </a> -->
       </li>
       <li></li>
     </ul>

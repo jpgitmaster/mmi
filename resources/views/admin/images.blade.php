@@ -177,13 +177,37 @@
 	  <div class="modal-dialog modal-lg">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+	        <h5 class="modal-title" id="exampleModalLabel">Add Banner</h5>
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	          <span aria-hidden="true">&times;</span>
 	        </button>
 	      </div>
 	      <div class="modal-body">
-	        ...
+	      	<span ng-if="imgtarget" ng-cloak>
+            <img ng-src="<%=imgtarget%>" alt="Display Banner" style="width: 100%;" />
+          </span>
+	      	<div class="clearfix"></div><br>
+	      	<div class="row no-gutters">
+	      		<div class="col-lg-12">
+	      			<div class="bx">
+								<div class="nptgrp">
+				          <input type="text" name="title" value="" required>
+				          <label class="nptlbl">Title</label>
+	      				</div>
+	      			</div>
+	      		</div>
+	      		<div class="col-lg-12">
+	      			<div class="bx">
+								<div class="nptgrp">
+				          <textarea name="description" required></textarea>
+				          <label class="nptlbl">Description</label>
+	      				</div>
+	      				<button class="btn btn-success">
+		      				Save Banner
+		      			</button>
+	      			</div>
+	      		</div>
+	      	</div>
 	      </div>
 	    </div>
 	  </div>

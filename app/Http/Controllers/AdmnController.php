@@ -27,6 +27,14 @@ class AdmnController extends Controller
         ]);
     }
 
+    public function images(){
+        return view('admin.images', [
+            'scripts'       => $this->import['scripts'],
+            'stylesheet'    => $this->import['stylesheet'],
+            'ngular'        => array_merge($this->import['ngular'], [n_images])
+        ]);
+    }
+
     // public function jobs(){
     // 	return view('admin.jobs', [
     //         'scripts'       => $this->import['scripts'],

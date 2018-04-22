@@ -1,8 +1,14 @@
 'use strict'; 
 var usrContent = angular.module('usrContent', []);
 
-usrContent.controller('ctrlImages', ['$scope', function($scope) {
+usrContent.controller('ctrlImages', ['$scope', '$timeout',
+    function($scope, $timeout) {
 
+    $scope.imgForm = function(imgtarget){
+        $timeout(function(){
+          $scope.imgtarget = imgtarget;
+        }, 10);
+    }
 }]);
 usrContent.directive('fileInput', ['$parse', '$http', '$timeout',
     function($parse, $http, $timeout){
@@ -13,7 +19,7 @@ usrContent.directive('fileInput', ['$parse', '$http', '$timeout',
               
             var files = elm[0].files;
             console.log(files);
-            angular.element('#imgModal').modal('show');
+            
             $parse(attrs.fileInput).assign(scope, files);
             scope.$apply();
             
@@ -40,15 +46,16 @@ usrContent.directive('fileInput', ['$parse', '$http', '$timeout',
             //         angular.element('#cropModal').appendTo('body').modal({
             //             backdrop: 'static'
             //         });
-            //         var file = files[0];
-            //         (function(file) {
-            //             var reader = new FileReader();
-            //             reader.readAsDataURL(file);
-            //             reader.onload = function(e) {
-            //                 var imgTarget = e.target.result;
-            //                 scope.imgForm(imgTarget);
-            //             }
-            //         }(file));
+                    var file = files[0];
+                    angular.element('#imgModal').modal('show');
+                    (function(file) {
+                        var reader = new FileReader();
+                        reader.readAsDataURL(file);
+                        reader.onload = function(e) {
+                            var imgTarget = e.target.result;
+                            scope.imgForm(imgTarget);
+                        }
+                    }(file));
             //         scope.msg = '';
             //     }else{
             //         scope.msg = msg;
