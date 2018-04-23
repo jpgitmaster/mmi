@@ -166,47 +166,41 @@ $(function() {
     ],
     resourceGroupField: 'group',
     resources: [
-      {id: 'a', group: 'test1', vessels: 'Auditorium A', masters: 'Master1', eventColor: 'green'},
-      {id: 'b', group: 'test1', vessels: 'Auditorium B', masters: 'Master1', eventColor: 'orange'},
-      {id: 'c', group: 'test1', vessels: 'Auditorium C', masters: 'Master1'},
-      {id: 'd', group: 'test1', vessels: 'Auditorium D', masters: 'Master1'},
-      {id: 'e', group: 'test1', vessels: 'Auditorium E', masters: 'Master1'},
-      {id: 'f', group: 'test1', vessels: 'Auditorium F', masters: 'Master1'},
-      {id: 'g', group: 'test1', vessels: 'Auditorium G', masters: 'Master1'},
-      {id: 'h', group: 'test2', vessels: 'Auditorium H', masters: 'Master1', eventColor: 'red'},
-      {id: 'i', group: 'test2', vessels: 'Auditorium I', masters: 'Master1'},
-      {id: 'j', group: 'test2', vessels: 'Auditorium J', masters: 'Master1'},
-      {id: 'k', group: 'test2', vessels: 'Auditorium K', masters: 'Master1'},
-      {id: 'l', group: 'test2', vessels: 'Auditorium L', masters: 'Master1'},
-      {id: 'm', group: 'test2', vessels: 'Auditorium M', masters: 'Master1'},
-      {id: 'n', group: 'test2', vessels: 'Auditorium N', masters: 'Master1'},
-      {id: 'o', group: 'test2', vessels: 'Auditorium O', masters: 'Master1'},
-      {id: 'p', group: 'test2', vessels: 'Auditorium P', masters: 'Master1'},
-      {id: 'q', group: 'test2', vessels: 'Auditorium Q', masters: 'Master1'},
-      {id: 'r', group: 'test3', vessels: 'Auditorium R', masters: 'Master1'},
-      {id: 's', group: 'test3', vessels: 'Auditorium S', masters: 'Master1'},
-      {id: 't', group: 'test3', vessels: 'Auditorium T', masters: 'Master1'}
+      {id: 1, group: 'LPG', vessels: 'BW TOKYO', masters: 'INDIAN OFFICER', eventColor: 'green'},
+      {id: 2, group: 'LPG', vessels: 'BW TOKYO', masters: 'INDIAN OFFICER', eventColor: 'orange'},
+      {id: 3, group: 'OIL TANKER', vessels: 'CHALLENGE PACIFIC', masters: 'TERANIA< JOUIE J.', eventColor: 'red'},
+      {id: 4, group: 'OIL TANKER', vessels: 'EAGLE SAPPORO', masters: 'INDIAN OFFICER'},
+      {id: 5, group: 'OIL TANKER', vessels: 'ESTEEM BRILLIANCE', masters: 'INDIAN OFFICER'},
+      {id: 6, group: 'OIL TANKER', vessels: 'MAERSK MATSUYAMA', masters: 'GILLE, MARVON E.'},
+      {id: 7, group: 'OIL TANKER', vessels: 'MAERSK MISUMI', masters: 'LIZA, RONNIE C.'},
+      {id: 8, group: 'OIL TANKER', vessels: 'SINGAPORE VOYAGER', masters: 'INDIAN OFFICER'},
+      {id: 9, group: 'OIL TANKER', vessels: 'TAIGA', masters: 'INDIAN OFFICER'},
+      {id: 10, group: 'OIL TANKER', vessels: 'TOKIO', masters: 'INDIAN OFFICER'},
+      {id: 11, group: 'OIL TANKER', vessels: 'TSUSHIMA', masters: 'INDIAN OFFICER'},
+      {id: 12, group: 'PRODUCT TANKER', vessels: 'ESTEEM SPLENDOUR', masters: 'INDIAN OFFICER'},
+      {id: 13, group: 'PRODUCT TANKER', vessels: 'ETERNAL DILIGENCE', masters: 'INDIAN OFFICER'},
+      {id: 14, group: 'PRODUCT TANKER', vessels: 'CHRISTINA KIRK', masters: 'INDIAN OFFICER'}
     ],
     resourceRender: function(resourceObj, $td) {
-      $td.eq(1).find('.fc-cell-content')
-        .append(
-          $('<strong style="cursor: pointer;">(?)</strong>').popover({
-            title: resourceObj.title,
-            content: 'test!',
-            trigger: 'hover',
-            placement: 'bottom',
-            container: 'body'
-          })
-        );
+      // $td.eq(1).find('.fc-cell-content')
+      //   .append(
+      //     $('<strong style="cursor: pointer;">(?)</strong>').popover({
+      //       title: resourceObj.title,
+      //       content: 'test!',
+      //       trigger: 'hover',
+      //       placement: 'bottom',
+      //       container: 'body'
+      //     })
+      //   );
     },
     slotLabelFormat: [
       'YYYY',
       'M'
     ],
     events: [
-      { id: '1', resourceId: 'a', start: '2018-04-07', end: '2018-08-07', title: 'event 1' },
-      { id: '2', resourceId: 'b', start: '2018-08-12', end: '2019-08-07', title: 'event 2' },
-      { id: '3', resourceId: 'h', start: '2018-08-12', end: '2019-04-07', title: 'event 3' },
+      { id: 1, resourceId: 1, start: '2018-04-07', end: '2018-08-07', title: 'event 1' },
+      { id: 2, resourceId: 2, start: '2018-08-12', end: '2019-08-07', title: 'event 2' },
+      { id: 3, resourceId: 8, start: '2018-08-12', end: '2019-04-07', title: 'event 3' },
     ]
   })
 
