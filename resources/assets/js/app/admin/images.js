@@ -9,6 +9,14 @@ usrContent.controller('ctrlImages', ['$scope', '$timeout',
           $scope.imgtarget = imgtarget;
         }, 10);
     }
+
+    $scope.resetBrowse = function(){
+        if($scope.msg['dp']){
+            $scope.msg['dp'] = '';
+        }
+        angular.element('.fileUpload .upload').val('');
+    }
+    
 }]);
 usrContent.directive('fileInput', ['$parse', '$http', '$timeout',
     function($parse, $http, $timeout){
@@ -26,28 +34,27 @@ usrContent.directive('fileInput', ['$parse', '$http', '$timeout',
             // scope.shw_avatarmdl = true;
             // scope.loader = true;
 
-            // $http({
-            //     method: 'POST',
-            //     url: "/validate_dp",
-            //     headers: { 'Content-Type': undefined },
-            //     transformRequest: function (data) {
-            //         var fd = new FormData();
-            //         angular.forEach(data.img_files, function(file){
-            //            fd.append('file', file);
-            //         });
-            //         return fd;
-            //     },
-            //     data: {img_files: files}
-            // }).then(function(result){
-            //     var msg = result.data;
+            $http({
+                method: 'POST',
+                url: "/admin/images/validate_banner",
+                headers: { 'Content-Type': undefined },
+                transformRequest: function (data) {
+                    var fd = new FormData();
+                    angular.forEach(data.img_files, function(file){
+                       fd.append('file', file);
+                    });
+                    return fd;
+                },
+                data: {img_files: files}
+            }).then(function(result){
+                var msg = result.data;
             //     scope.shw_avatarmdl = false;
                 
-            //     if(!msg['dp']['error']['file']){
-            //         angular.element('#cropModal').appendTo('body').modal({
-            //             backdrop: 'static'
-            //         });
+                if(!msg['dp']['error']['file']){
                     var file = files[0];
-                    angular.element('#imgModal').modal('show');
+                    angular.element('#imgModal').appendTo('body').modal({
+                        backdrop: 'static'
+                    });
                     (function(file) {
                         var reader = new FileReader();
                         reader.readAsDataURL(file);
@@ -56,11 +63,11 @@ usrContent.directive('fileInput', ['$parse', '$http', '$timeout',
                             scope.imgForm(imgTarget);
                         }
                     }(file));
-            //         scope.msg = '';
-            //     }else{
-            //         scope.msg = msg;
-            //     }
-            // });
+                    scope.msg = '';
+                }else{
+                    scope.msg = msg;
+                }
+            });
           });
         }
     }

@@ -1,3 +1,6 @@
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none;
+}
 #wrapper{
 	display: grid;
 	grid-template-columns: 250px 1fr 1fr 1fr 1fr 350px;
@@ -183,6 +186,29 @@
 							cursor: pointer;
 							opacity: 0;
 							filter: alpha(opacity=0);
+						}
+						.nptgrp {
+					    margin: 0;
+					    position: absolute;
+					    right: 0;
+					    left: 0;
+					    width: 100%;
+					    bottom: -5px;
+					    z-index: 999;
+					    .popcntnr {
+						    position: absolute;
+						    right: -20px;
+						    left: 0;
+						    bottom: 34px;
+						    z-index: 9;
+						    .popover-body {
+							    padding-right: 28px;
+							    ul{
+							    	padding-left: 20px;
+							    	margin: 0;
+							    }
+								}
+							}
 						}
 					}
 

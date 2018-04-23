@@ -8,6 +8,26 @@
   	<div class="card-header">
 			<div class="fileUpload btn btn-primary">
       	Add Sliding Banner &nbsp;&nbsp; <i class="fa fa-plus"></i> <input type="file" class="upload" file-input="files">
+      	<div class="nptgrp err am-flip-x" ng-if="msg['dp']" ng-cloak>
+					<div class="popcntnr">
+            <div class="popover bs-popover-top" ng-class="{'success': msg['dp']['success']}">
+					    <div class="arrow"></div>
+					    <div class="popover-body">
+					    	<span class="rmve" ng-click="resetBrowse()">
+          				<i class="fa fa-close"></i>
+          			</span>
+				      	<ul ng-if="msg['dp']['error']['file']" ng-cloak>
+									<li ng-repeat="err in msg['dp']['error']['file']">
+										<%=err%>
+									</li>
+								</ul>
+								<p ng-if="msg['dp']['success']" ng-cloak>
+									<%=msg['dp']['success']%>
+								</p>
+					    </div>
+						</div>
+          </div>
+        </div>
       </div>
 			<ul class="nav nav-tabs card-header-tabs">
 			  <li class="nav-item">
@@ -178,7 +198,7 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <h5 class="modal-title" id="exampleModalLabel">Add Banner</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	        <button type="button" class="close" data-dismiss="modal" ng-click="resetBrowse()" style="outline: none;">
 	          <span aria-hidden="true">&times;</span>
 	        </button>
 	      </div>

@@ -30,6 +30,9 @@ Route::group(['middleware' => ['auth:jp_admin']], function(){
 		Route::get('images', [
 	    'as' => 'admn_images', 'uses' => 'AdmnController@images'
 		]);
+		Route::post('images/validate_banner', [
+	    'as' => 'validate_banner', 'uses' => 'AdmnController@validate_banner'
+		]);
 		Route::get('logout', [
 	    'as' => 'admn_logout', 'uses' => 'AdmnController@logout'
 		]);

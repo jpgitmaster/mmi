@@ -1,3 +1,7 @@
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none;
+}
+
 #wrapper {
   display: -ms-grid;
   display: grid;
@@ -202,6 +206,33 @@
   cursor: pointer;
   opacity: 0;
   filter: alpha(opacity=0);
+}
+
+#wrapper .admnbx.content .cntnbx .card .fileUpload .nptgrp {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  bottom: -5px;
+  z-index: 999;
+}
+
+#wrapper .admnbx.content .cntnbx .card .fileUpload .nptgrp .popcntnr {
+  position: absolute;
+  right: -20px;
+  left: 0;
+  bottom: 34px;
+  z-index: 9;
+}
+
+#wrapper .admnbx.content .cntnbx .card .fileUpload .nptgrp .popcntnr .popover-body {
+  padding-right: 28px;
+}
+
+#wrapper .admnbx.content .cntnbx .card .fileUpload .nptgrp .popcntnr .popover-body ul {
+  padding-left: 20px;
+  margin: 0;
 }
 
 #wrapper .admnbx.content .cntnbx .card .accordion .card .card-header {
